@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import React from "react";
+import {  useDispatch } from "react-redux";
 import { setSelectedUser } from "../actions/getUsers";
 
 function DisplayPeople(props){
