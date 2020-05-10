@@ -24,13 +24,13 @@ function App() {
       <div className="container">
         <div className='frame1'>
         <div className="row ml-0 mr-0">
-            <div className="col-md-2">
+            <div className="col-md-3">
                 <div className="first_section">
                   <img alt="Profile" src={ownerData.profile_link} width="52" height="52" />
                   <span>{ownerData.username}</span>
               </div>
             </div>
-            <div className="col-md-10">
+            <div className="col-md-19">
               <div className="user_tags">
                   < SelectedUsers users={selectedUser} admin={true} /> 
               </div>
