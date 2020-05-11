@@ -5,6 +5,7 @@ import configureStore from './store';
 import DisplayPeople from "./components/DisplayPeople";
 import { useSelector } from "react-redux";
 import SelectedUsers from "./components/SelectedUsers";
+import Search from './components/Search';
 
 
 function App() {
@@ -15,7 +16,6 @@ function App() {
   
   const ownerData = useSelector(state => state.userReducer.owner);
 
-  console.log(selectedUser)
   
   
 
@@ -24,13 +24,13 @@ function App() {
       <div className="container">
         <div className='frame1'>
         <div className="row ml-0 mr-0">
-            <div className="col-md-3">
+            <div className="col-md-3 pr-0">
                 <div className="first_section">
                   <img alt="Profile" src={ownerData.profile_link} width="52" height="52" />
                   <span>{ownerData.username}</span>
               </div>
             </div>
-            <div className="col-md-19">
+            <div className="col-md-9 pl-0">
               <div className="user_tags">
                   < SelectedUsers users={selectedUser} admin={true} /> 
               </div>
@@ -59,7 +59,7 @@ function App() {
               <div class="modal-body">
                 <div>
                   <div className="search_div">
-                      <input className="search_box text-center" placeholder="Search"/>
+                      < Search />
                     </div>
 
                     <div className="search_result">

@@ -56,6 +56,25 @@ export default (state =
         selectedUsers: state.selectedUsers.filter(user=> user.id !== action.payload.id),
         users: [...state.users, action.payload]
      }
+  case "SEARCH":
+    return{
+      ...state,
+      users: [...action.payload]
+    }
+  case "RESET_SEARCH":
+    return{
+      ...state,
+      users: [
+                {id:1, username:"Kathryn Simmmons",profile_link:"/user1.svg",tag:true},
+                {id:2, username:"Arlene Simmmons",profile_link:"/user2.svg", tag:true},
+                {id:3, username:"Harold Flores",profile_link:"/user3.svg", tag:false},
+                {id:4, username:"Max Steward",profile_link:"/user4.svg", tag: true},
+                {id:5, username:"Kathryn Simmmons",profile_link:"/user1.svg",tag:true},
+                {id:6, username:"Arlene Simmmons",profile_link:"/user2.svg", tag:true},
+                {id:7, username:"Harold Flores",profile_link:"/user3.svg", tag:false},
+                {id:8, username:"Max Steward",profile_link:"/user4.svg", tag: true}
+              ]
+    }
 
   case GET_SELECTED_USER:
     return{

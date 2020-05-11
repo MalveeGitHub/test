@@ -37,3 +37,10 @@ export const setTagsToUser = () =>{
     type: SET_TAGS_TO_USER
   }
 }
+
+export const searchUser = (data)=>{
+  return {
+    type: "SEARCH",
+    payload: data
+  }
+}
