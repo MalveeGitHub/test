@@ -11,6 +11,7 @@ import Search from './components/Search';
 function App() {
 
   const users = useSelector(state=> state.userReducer.users);
+  console.log(users);
 
   const selectedUser = useSelector(state => state.userReducer.selectedUsers);
   
@@ -51,8 +52,13 @@ function App() {
               {/* Model header */}
               <div class="modal-header">
               <div>
-                <button data-dismiss="modal" className="btn backbutton"> <img alt="Button" src="/backbtn.svg" /> Back</button>
-                <span className="text-center tagpeople_text"> <img alt="Button" src="/tagpeople_top.svg" />  Tag People </span>
+                <button data-dismiss="modal" className="btn backbutton"> <img alt="Button" src="/backbtn.svg" width="15" height="12"/> Back</button>
+
+              
+                <span className="text-center tagpeople_text"> <img alt="Button" src="/tagpeople_top.svg" />  <span className="tag_people_real">Tag People</span>  </span>
+             
+               
+
               </div>                
               </div>
 
