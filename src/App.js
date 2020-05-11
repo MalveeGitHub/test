@@ -33,7 +33,7 @@ function App() {
             </div>
             <div className="col-md-9 pl-0">
               <div className="user_tags">
-                  < SelectedUsers users={selectedUser} admin={true} /> 
+                  < SelectedUsers noBorder={true} users={selectedUser} admin={true} /> 
               </div>
             </div>
         </div>

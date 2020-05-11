@@ -122,7 +122,7 @@ div.search_result{
 
 div.modal-content{
    width:570px;
-   height: 500px;
+   min-height: 417px;
 
 }
 
@@ -141,7 +141,7 @@ span.select_people{
 div.display_users{
   margin-top:10px;
   overflow-y: scroll;
-  max-height: 200px;
+  max-height: 250px;
 
   
 }
@@ -155,12 +155,14 @@ div.display_users{
 /* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
+  
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #B9CCD7;
   border-radius: 10px !important;
+  max-height: 41px !important;
 }
 
 /* Handle on hover */
@@ -235,6 +237,9 @@ div.search_result_inner{
   border: 1px solid #CCDADF;
   border-radius: 8px;
   padding:14px;
+  max-height: 106px;
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 div.done_button{

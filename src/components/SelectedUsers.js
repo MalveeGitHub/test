@@ -9,7 +9,7 @@ const SelectedUsers = (props)=>{
   return(
     <React.Fragment>
         {/* Selected User */}
-        <div className="search_result_inner">
+        <div className="search_result_inner" style={props.noBorder? {border:"none"} : {}}>
         {props.users.map(user=> (
           <div className="selected_user_">
             
